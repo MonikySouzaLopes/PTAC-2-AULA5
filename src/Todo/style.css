@@ -1,0 +1,12 @@
+body{
+    background:  linear-gradient(to right, rgb(117, 255, 135), rgb(230, 25, 212));
+}
+
+input{
+    border-radius: 20px;
+}
+
+.flex.conteiner{
+    display: flex;
+    justify-content: space-around;
+}
