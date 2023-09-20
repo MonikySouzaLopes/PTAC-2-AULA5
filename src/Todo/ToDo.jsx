@@ -25,6 +25,16 @@ export default function ToDo() {
         console.log(id)
     };
 
+    const remover = (id) => {
+        const auxLista = [];
+        lista.map((lista) => {
+            if(lista.id !== id){
+                auxLista.push(lista);
+            }
+        });
+        setLista(auxLista);
+    }
+
     return (
         <div>
             <Link to="/">home</Link>
@@ -58,7 +68,9 @@ export default function ToDo() {
                 <p><strong>Preço:</strong>R${ativ.preco}</p>
                 <p><strong>Imagem:</strong></p>
                 <img src={ativ.img} alt="" />
-                <button onClick={() => remover(ativ.id)}>Remover</button>
+                <br />
+                <br />
+                <button class="btn btn-outline-danger"onClick={() => remover(ativ.id)}>Remover</button>
             </div>
             )} 
         </div>
