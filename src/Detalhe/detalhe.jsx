@@ -16,6 +16,4 @@ console.log(ativ[0]);
     return(
         <Card ativ={ativ[0]}></Card>
     );
-        
-    
 }

@@ -5,5 +5,4 @@ export default function Card({ativ}){
             <h1>{ativ.ativ}</h1>
         </div>
     );
-
 }
