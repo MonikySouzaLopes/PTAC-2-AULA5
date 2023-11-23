@@ -1,4 +1,4 @@
-export default function Card({ativ}){
+export default function Card(ativ){
 
     return(
         <div>
